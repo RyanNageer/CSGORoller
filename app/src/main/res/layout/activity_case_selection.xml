@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaseSelection">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="for astetic"
+        android:src="@drawable/wallpaper"
+        android:translationZ="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+
+    <Button
+        android:id="@+id/dreams_and_nightmares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DreamNightmare"
+        android:onClick="launchNightmare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dncase"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dncase"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <ImageView
+        android:id="@+id/dncase"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Dreams and nightmares weapons case - $0.97"
+        android:src="@drawable/case_dreams_and_nightmares"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/kilowatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Kilowatt"
+        android:onClick="launchKilowatt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kwcase"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/kwcase"
+        app:layout_constraintTop_toBottomOf="@+id/dreams_and_nightmares"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <ImageView
+        android:id="@+id/kwcase"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Killowatt weapons case - $2.16"
+        android:src="@drawable/case_kilowatt"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dncase"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/esports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Esports"
+        android:onClick="launchEsports"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/espcase"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/espcase"
+        app:layout_constraintTop_toBottomOf="@+id/kilowatt"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <ImageView
+        android:id="@+id/espcase"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="esports 2013 weapons case - $50.41"
+        android:src="@drawable/case_esports"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dreams_and_nightmares"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <Button
+        android:id="@+id/Bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchBank"
+        android:text="@string/Bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/espcase"
+
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/espcase"
+        app:layout_constraintTop_toBottomOf="@+id/kilowatt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/numDOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/dncase"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numKOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="156dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/numDOpened"
+        app:layout_constraintTop_toBottomOf="@+id/numDOpened" />
+
+    <TextView
+        android:id="@+id/numEOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/numKOpened"
+        app:layout_constraintTop_toBottomOf="@+id/numKOpened" />
+
+    <LinearLayout
+        android:id="@+id/netWorthContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Net Worth Label -->
+        <TextView
+            android:id="@+id/netWorthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Worth: $"
+            android:textColor="@android:color/black"/>
+
+        <!-- Net Worth Value -->
+        <TextView
+            android:id="@+id/netWorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

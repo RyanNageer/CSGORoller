@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CSGORoller</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="home_title">CS:GO Case Roller</string>
+    <string name="play_without_logging_in">Play Without Logging in</string>
+    <string name="Cases">Cases</string>
+    <string name="DreamNightmare">Dreams and Nightmares</string>
+    <string name="Esports">Esports</string>
+    <string name="Kilowatt">Kilowatt</string>
+    <string name="Spin">SPIN!!!</string>
+    <string name="Back">Back</string>
+    <string name="Bank">Bank</string>
+    <string name="Earnings">Earnings</string>
+    <string name="Profits">Profits</string>
+    <string name="case_info">Case Info</string>
+
+    <string-array name="DropdownStrings">
+        <item>Dreams and Nightmares</item>
+        <item>Kilowatt</item>
+        <item>Esports</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="net_worth">Total rolled skin value: $</string>
+    <string name="value_of_cases_opened">Value of cases opened: $</string>
+    <string name="net_profit">Net profit: $</string>
+    <string name="dreams_and_nightmares">Dreams and Nightmares: $0.89</string>
+    <string name="kilowatt">Kilowatt: $1.39</string>
+    <string name="esports">Esports: $54.54</string>
+    <string name="cost_per_key_2_50">Cost per key: $2.50</string>
+</resources>
